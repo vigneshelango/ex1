@@ -1,0 +1,33 @@
+<div class="container color-dark">
+<div class="col">
+  <p>Add Wih List
+      </p>
+
+</div>
+<div class="col">
+    <p>Wih List({{itemCount}})
+        </p>
+  
+  </div>
+</div>
+<div class="container color-light">
+  <div class="col">
+    <p class ="sm">add your lyf new goals</p>
+  <form>
+    <input type="text" class="txt" name="item" placeholder="goals" [(ngModel)]="gltxt">
+   <br>
+    
+    <input type="submit" class="btn" [value]="btntxt" (click)="adGols()">
+    
+
+  </form>
+  </div>
+  <div class="col">
+    <p class="gl-container" *ngFor="let goal  of goals">
+      {{goal}}
+     
+
+    </p>
+
+  </div>
+</div>
